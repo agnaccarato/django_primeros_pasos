@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ¿Qué puedo comer hoy?</title>
+    <link rel="shortcut icon" href="favico3.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gochi+Hand&family=Indie+Flower&family=Lobster+Two&family=Mansalva&family=Sacramento&family=Spline+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylesFormulario.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contacto <ion-icon name="paper-plane-outline" class="animacion"></ion-icon>
+        </h1>
+        <!--avioncito de icono se mueve-->
+    </header>
+    <main>
+        <form action="https://formspree.io/f/{form_id}" method="post">
+            <div class="columnas">
+                <label> Nombre:
+
+                    <input type="text" name="Nombre_Apellido" placeholder="Escribe tu nombre" required>
+                </label>
+
+                <label> Email:
+
+                    <input type="email" name="Email" placeholder="Ingresa tu e-mail" required>
+                </label>
+            </div>
+            <div class="columnas">
+
+                <label> Soy:
+                   
+                    <label> Mujer
+                        <input type="radio" name="gender" value="M">
+                    </label>
+                    <label> Hombre
+                        <input type="radio" name="gender" value="H">
+                    </label>
+                    <label> Otrx
+                        <input type="radio" name="gender" value="Otrx">
+                    </label>
+                    <label> Prefiero no decirlo
+                        <input type="radio" name="gender" value="?">
+                    </label>
+                </label>
+
+            </div>
+            <label>Mensaje:
+                <input type="text" textarea name="Mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            </label>
+            <label>Quiero una copia:
+                <input type="checkbox" name="Copia" id="copia" checked>
+            </label>
+
+            <div class="botones">
+                <input class="btn-reset" type="reset" name="reset">
+                <input class="btn-enviar" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+<footer>
+    <div class="flex-container-foot">
+        <h4><a class="pie" href="index.html">Inicio</a></h4>
+        
+    </div>
+</footer>
+
+</html>

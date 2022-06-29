@@ -1,0 +1,47 @@
+this.document.append("hola");
+VM101:1 Uncaught DOMException: Failed to execute 'append' on 'Document': Nodes of type '#text' may not be inserted inside nodes of type '#document'.
+    at <anonymous>:1:15
+(anónimo) @ VM101:1
+this.document.body.outerHTML("<i>hola</i>");
+VM229:1 Uncaught TypeError: this.document.body.outerHTML is not a function
+    at <anonymous>:1:20
+(anónimo) @ VM229:1
+this.document.body.outerHTML = "<i>hola</i>";
+'<i>hola</i>'
+this.document.body.outerHTML = Date();
+'Wed Jan 26 2022 18:18:53 GMT-0300 (hora estándar de Argentina)'
+x = Date();
+'Wed Jan 26 2022 18:19:15 GMT-0300 (hora estándar de Argentina)'
+x = new Date();
+Wed Jan 26 2022 18:19:48 GMT-0300 (hora estándar de Argentina)
+x.getHours()
+18
+function saludo() {
+x = new Date();
+if (x.getHours() > 13)
+    
+VM959:4 Uncaught SyntaxError: Unexpected end of input
+function saludo() {
+x = new Date();
+hours = x.getHours();
+if (hours > 13 && hours < 20)
+    this.document.body.outerHTML = "Buenas tardes gato";
+    
+VM1179:6 Uncaught SyntaxError: Unexpected end of input
+function saludo() {
+x = new Date();
+hours = x.getHours();
+if (hours > 13 && hours < 20)
+    this.document.body.outerHTML = "Buenas tardes gato";
+    
+VM1182:6 Uncaught SyntaxError: Unexpected end of input
+function saludo() {
+x = new Date();
+hours = x.getHours();
+if (hours > 13 && hours < 20)
+    this.document.body.outerHTML = "Buenas tardes gato";
+}
+    
+undefined
+saludo()
+undefined

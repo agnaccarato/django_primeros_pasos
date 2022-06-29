@@ -1,0 +1,1 @@
+animation: animacion 2s ease 0s infinite normal forwards;

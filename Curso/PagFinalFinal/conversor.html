@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor - ¿Qué puedo comer hoy?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favico3.ico">
+    <link rel="stylesheet" href="styles_orden.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gochi+Hand&family=Indie+Flower&family=Lobster+Two&family=Mansalva&family=Sacramento&family=Spline+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="title">
+                <h1>Conversor de medidas</h1>
+            </a>
+            <ul class="menu">
+                <div class="flex-container-ppal">
+                    <li><a class="btn" href="index.html">Inicio</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="conversor.html" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Conversor de medidas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#liquidos">
+                                        <ion-icon name="color-fill-outline"></ion-icon> Líquidos
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#pesos">
+                                        <ion-icon name="barbell-outline"></ion-icon> Peso - Secos
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#temp">
+                                        <ion-icon name="flame-outline"></ion-icon> Temperatura
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#coccionhuevo">
+                                        <ion-icon name="egg-outline"></ion-icon> Coccion huevo
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#coccionarroz">
+                                        <ion-icon name="rose-outline"></ion-icon> Coccion arroz
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="btn" href="loquetengo.html">Hacer magia con lo que tengo</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Conversores de medidas</h2>
+        </section>
+
+        <section>
+            <form class="form-conv" name="formulario-liquido">
+                <h3 id="liquidos">Conversor de líquidos</h3>
+                <label for="litros">Litros</label>
+                <div class="columnas"><input onchange="calcularLiq(this.value,1)" name="litros" id="litros"
+                        class="formulario-conversores"></div>
+
+                <label for="ml">Mililitros</label>
+                <div class="columnas"><input onchange="calcularLiq(this.value,1/1000)" name="ml" id="ml"
+                        class="formulario-conversores"></div>
+
+                <label for="onzaLiq">Onzas</label>
+                <div class="columnas"><input onchange="calcularLiq(this.value,1/35)" name="onzaLiq" id="onzaLiq"
+                        class="formulario-conversores"></div>
+
+                <label for="tazaLiq">Tazas</label>
+                <div class="columnas"><input onchange="calcularLiq(this.value,1/4.375)" name="tazaLiq" id="tazaLiq"
+                        class="formulario-conversores"></div>
+
+                <label for="cucharadaLiq">Cucharadas</label>
+                <div class="columnas"><input onchange="calcularLiq(this.value,1/70)" name="cucharadaLiq"
+                        id="cucharadaLiq" class="formulario-conversores"></div>
+
+                <label for="cucharadita">Cucharaditas</label>
+                <div class="columnas"><input onchange="calcularLiq(this.value,1/200)" name="cucharadita"
+                        id="cucharadita" class="formulario-conversores"></div>
+
+                <button class="btn-conversor" onclick="return false;">Convertir</button>
+                <button class="btn-reset" onclick="limpiarLiq();return false;">Resetear</button>
+            </form>
+        </section>
+
+        <section>
+            <form class="form-conv" name="formulario-peso">
+                <h3 id="pesos">Conversor de pesos</h3>
+                <label for="kilos">Kilos</label>
+                <div class="columnas"><input onchange="calcularPeso(this.value,1)" name="kilos" id="kilos"
+                        class="formulario-conversores"></div>
+
+                <label for="gramos">Gramos</label>
+                <div class="columnas"><input onchange="calcularPeso(this.value,1/1000)" name="gramos" id="gramos"
+                        class="formulario-conversores"></div>
+
+                <label for="libras">Libras</label>
+                <div class="columnas"><input onchange="calcularPeso(this.value,1/2)" name="libras" id="libras"
+                        class="formulario-conversores"></div>
+
+                <label for="onzaPeso">Onzas</label>
+                <div class="columnas"><input onchange="calcularPeso(this.value,1/32)" name="onzas" id="onzaPeso"
+                        class="formulario-conversores"></div>
+
+                <label for="tazaPeso">Tazas</label>
+                <div class="columnas"><input onchange="calcularPeso(this.value,1/8)" name="tazas" id="tazaPeso"
+                        class="formulario-conversores"></div>
+
+                <label for="cucharadaPeso">Cucharadas</label>
+                <div class="columnas"><input onchange="calcularPeso(this.value,1/120)" name="cucharadaPeso"
+                        id="cucharadaPeso" class="formulario-conversores"></div>
+
+                <button class="btn-conversor" onclick="return false;">Convertir</button>
+                <button class="btn-reset" onclick="limpiarPeso();return false;">Resetear</button>
+            </form>
+        </section>
+
+        <!----
+        <section>
+            <h2>Descubre alimentos de temporada</h2>
+        </section>
+
+        <section>
+            <div class="tcoccion">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h4>Enero</h4>
+                            <img class="tarjetaespecial" src="enero.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Febrero</h4>
+                            <img class="tarjetaespecial" src="febrero.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Marzo</h4>
+                            <img class="tarjetaespecial" src="marzo.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Abril</h4>
+                            <img class="tarjetaespecial" src="abril.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Mayo</h4>
+                            <img class="tarjetaespecial" src="mayo.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Junio</h4>
+                            <img class="tarjetaespecial" src="junio.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Julio</h4>
+                            <img class="tarjetaespecial" src="julio.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Agosto</h4>
+                            <img class="tarjetaespecial" src="agosto.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Septiembre</h4>
+                            <img class="tarjetaespecial" src="sept.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Octubre</h4>
+                            <img class="tarjetaespecial" src="octubre.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Febrero</h4>
+                            <img class="tarjetaespecial" src="noviembre.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Diciembre</h4>
+                            <img class="tarjetaespecial" src="0eb4e1a4445db5cdafd4afa478f5e8e3.jpg"
+                                class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>-->
+        <section>
+            <h2>Datos útiles</h2>
+        </section>
+        <div class="tcoccion">
+            <div>
+                <h3 id="temp">Temperatura del horno</h3>
+                <table>
+
+                    <thead>
+                        <th>Celcius</th>
+                        <th>Farenheit</th>
+                        <th>Descripción</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <120ºC </td>
+                            <td>250ºF</td>
+                            <td>Frío</td>
+                        </tr>
+                        <tr>
+                            <td>150ºC</td>
+                            <td>300ºF</td>
+                            <td>Bajo</td>
+                        </tr>
+                        <tr>
+                            <td>180ºC</td>
+                            <td>350ºF</td>
+                            <td>Moderado</td>
+                        </tr>
+                        <tr>
+                            <td>200ºC</td>
+                            <td>400ºF</td>
+                            <td>Fuerte</td>
+                        </tr>
+                        <tr>
+                            <td> >220ºC</td>
+                            <td>425ºF</td>
+                            <td>Muy Caliente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h3 id="coccionhuevo">¿Cuánto cocino un huevo?</h3>
+                <img id="img-coccionhuevo" src="coccionhuevo.jpg">
+            </div>
+            <div>
+                <h3 id="coccionarroz">¿Cuánto cocino el arroz?</h3>
+
+                <table>
+
+                    <thead>
+
+                        <th>Tipo arroz</th>
+
+                        <th>Cantidad líquido</th>
+
+                        <th>Tiempo cocción</th>
+
+                        <th>Rinde</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Grano medio</td>
+                            <td>625ml</td>
+                            <td>16-20min</td>
+                            <td>560g</td>
+                        </tr>
+                        <tr>
+                            <td>Grano largo</td>
+                            <td>420ml</td>
+                            <td>16-20min</td>
+                            <td>560g</td>
+                        </tr>
+                        <tr>
+                            <td>Vaporizado**</td>
+                            <td>700ml</td>
+                            <td>20min</td>
+                            <td>560g</td>
+                        </tr>
+                        <tr>
+                            <td>Integral</td>
+                            <td>700ml</td>
+                            <td>45-50min</td>
+                            <td>700g</td>
+                        </tr>
+                        <tr>
+                            <td>Silvestre</td>
+                            <td>600ml</td>
+                            <td>45-60min</td>
+                            <td>450g</td>
+                        </tr>
+
+                        <tr>
+                            <td>Risotto</td>
+                            <td>360ml</td>
+                            <td>15-20min</td>
+                            <td>560g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="arroz">*Cálculo para 250g de arroz. <br>
+                    **El arroz vaporizado es el que no se pega ni se pasa</p>
+            </div>
+        </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="flex-container-foot">
+            <h4><a class="pie" href="formulario.html">Contacto</a></h4>
+            <h4><a class="pie" href="#">Volver arriba</a></h4>
+        </div>
+    </footer>
+
+    <!-- codigo para que ande boostrap e iconitos-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="conversor.js"></script>
+</body>
+
+</html>

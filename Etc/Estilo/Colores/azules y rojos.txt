@@ -1,0 +1,35 @@
+ming
+
+#006d77
+
+middle blue green
+
+#83c5be
+
+alice blue
+
+#edf6f9
+
+silk-rosita
+#ffddd2
+
+salmon oscuro
+#e29578
+
+otro rojo
+#ff6663
+
+amarillo minion
+#fde74C
+
+honey yellow
+#FFBB10
+
+rubi
+#982649
+
+negro oliva
+3B413C
+
+salsa roja
+FB3640

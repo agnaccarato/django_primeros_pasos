@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="img/iconito.png">
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="https://ponganelsuyo" method="GET" >
+        <label for="nombre">El nombre:</label>
+        <input type="text" name="nombre" id="nombre" >
+
+        <label>El Apellido:
+            <input type="text" name="apellido">
+        </label>
+
+        <label>Seleccionar Curso:
+            <select name="Curso" >
+                <option value="Python"> Elijo Python</option>
+                <option value="Java"> Me copa Java</option>
+                <option value="Node"> Prefiero Node</option>
+            </select>
+        </label>
+
+        <label>
+            Comentarios:
+            <textarea name="loscomentarios"  cols="30" rows="10"></textarea>
+        </label>
+
+
+        <fieldset>
+            <legend>Datos personales Maraton</legend>
+
+            <label>Bicicleta Elegida:
+                <input type="text" name="bici">
+            </label>
+
+        </fieldset>
+
+        <input type="reset" name="reset">
+        <input type="submit" value="submit">
+
+    </form>
+    
+</body>
+</html>

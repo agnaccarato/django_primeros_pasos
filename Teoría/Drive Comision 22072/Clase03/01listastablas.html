@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,td, th{
+            border:solid;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Como hacer un navegador a secciones de la pagina.-->
+    <header>
+        <nav>
+            <a href="#listas">Listas<i class="fa fa-table" aria-hidden="true"></i>|</a>
+            <a href="#tablas">Tablas|</a>
+            <a href="#colyrowspan">Colspan|</a>
+        </nav>
+    </header>
+    
+
+    <main>
+    <!-- Listas!!!!!!!!!!!!!! -->
+    <section id="listas">
+           
+        <h2>Lista ordenada</h2>
+            <ol type="I" reversed>
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+                <li>Opción 4</li>
+                <li>Opción 5</li>
+                <li>Opción 6</li>
+            </ol>
+        <hr>
+        <h2>Lista sin ordenar</h2>
+        <ul>
+            <li>Opción 1</li>
+            <li>Opción 2</li>
+            <li>Opción 3</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section id="tablas">
+    <!-- Tablas!!!!!!!!!! -->
+    <table>
+
+        
+        <!--Cabecera-->
+        <tr><!-- tr es table row , creo una nueva FILA -->
+            <th>Titulo columna 1</th>
+            <th>Titulo columna 2</th>
+            <th>Titulo columna 3</th>
+        </tr>
+        <tr>
+            <td>Celda 1x1</td>
+            <td>Celda 2x1</td>
+            <td>Celda 3x1</td>
+        </tr>
+        <tr>
+            <td>Celda 1x2</td>
+            <td>Celda 2x2</td>
+            <td>Celda 3x2</td>
+        </tr>
+    </table>
+
+
+    <!-- Con thead , tbody y tfoot puedo desorganizar la info
+    y la tabla se va a ver bien igual
+puedo poner el tfoot primero e igualmente va a salir abajo -->
+    <hr>
+    <table>
+        <caption>
+            Título de la tabla
+        </caption>
+        <!-- Table header: cabecera de la tabla (thead) -->
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+        </thead>
+        <!-- Table body: cuerpo de la tabla (tbody) -->
+        <tbody>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+        </tbody>
+        <!-- Table footer: pie de la tabla (tfoot) -->
+        <tfoot>
+            <tr>
+                <td>Pie de tabla 1</td>
+                <td>Pie de tabla 2</td>
+            </tr>
+        </tfoot>
+        <!-- Leyenda o título de la tabla -->
+    </table>
+    </section>
+    <hr><hr>
+<!--------- Como usar colspan y rowspan----------------------------------- -->
+<!-- Creo la estructura basica -->
+    <section id="colyrowspan"></section>
+    <table>
+        <tr>
+            <th>Curso</th>
+            <th>Comision</th>
+        </tr>
+        <tr>
+            <td>FullStack</td>
+            <td>2123</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>2598</td>
+        </tr>
+        <tr>
+            <td>Web</td>
+            <td>2254</td>
+        </tr>
+    </table>
+
+    <!-- Si quiero que fullStack ocupe dos columnas  -->
+
+    <table>
+        <tr>
+            <th>Curso</th>
+            <th>Comision</th>
+        </tr>
+        <tr>
+            <td colspan="2">FullStack</td><!--Agrego esto
+           y borro 2123 -->
+         </tr>
+        <tr>
+            <td>Java</td>
+            <td>2598</td>
+        </tr>
+        <tr>
+            <td>Web</td>
+            <td>2254</td>
+        </tr>
+    </table>
+
+    <hr><hr><hr>
+     <!-- Si quiero que java ocupe dos filas  -->
+
+     <table>
+        <tr>
+            <th>Curso</th>
+            <th>Comision</th>
+        </tr>
+        <tr>
+            <td colspan="2">FullStack</td>
+         </tr>
+        <tr>
+            <td rowspan="2">Java</td>
+            <td>2598</td>
+        </tr>
+        <tr>
+            <td>2254</td>
+        </tr>
+    </table>
+</section>
+    
+</main>
+</body>
+
+</html>

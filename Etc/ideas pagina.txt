@@ -1,0 +1,7 @@
+IDEAS PARA MI PAGINA
+*buscador de recetas
+temporizador con alarma
+*cargar y sugerir segun ingredientes
+*conversor de medidas 
+sugerir reemplazo opcion celliaco/vegano/vegetariano/dbt/bla
+dato de color

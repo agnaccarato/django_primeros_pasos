@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    label,
+    input,
+    select,
+    textarea {
+        display: block;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+
+    <form action="show_data.html">
+
+        <label>Nombre y Apellido:
+            <input type="text" name="Nombre_Apellido" placeholder="Mete tu nombre" required>
+        </label>
+
+        <label>Email:
+            <input type="email" name="Email" placeholder="Ingresa tu e-mail" required>
+        </label>
+
+        <labe>Contraseña:
+            <input type="password" name="Password" required>
+        </label>
+
+        <p> Sexo:
+            <label>Mujer
+                <input type="radio" name="Sexo" value="M">
+            </label>
+            <label>Hombre
+                <input type="radio" name="elsexo" value="H">
+            </label>
+        </p>
+
+        <label>Mensaje:
+            <textarea name="Mensaje" cols="30" rows="10" placeholder="Mete tu mensaje" required></textarea>
+        </label>
+
+        <label>Quiero una copia:
+            <input type="checkbox" name="Copia" id="copia" checked>
+        </label>
+
+        <select name="Seniority">
+            <!-- Opciones de la lista -->
+            <option value="JR" selected>Junior</option>
+            <option value="SSR"  >Semi-Senior</option> <!-- Opción por defecto -->
+            <option value="SR" >Senior</option>
+        </select>
+
+        <label>
+            <input type="date" name="" id="">
+        </label>
+
+        <label>
+            <input type="color" name="color" id="">
+        </label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
