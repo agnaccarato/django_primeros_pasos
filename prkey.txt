@@ -1,0 +1,99 @@
+==================================================
+Product Name      : Internet Explorer
+Product ID        : 00342-41310-78423-AAOEM
+Product Key       : NBQ2C-G4YTB-8H8GH-2RFVV-FJRJY
+Installation Folder : 
+Service Pack      : 
+Build Number      : 
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 16/04/2021 11:30:57
+==================================================
+
+==================================================
+Product Name      : Microsoft Office Professional 2010
+Product ID        : 82503-577-0015573-27040
+Product Key       : 6CKG4-87QVJ-R48KD-BJRFX-P3HJ9
+Installation Folder : C:\Program Files (x86)\Microsoft Office\Office14\
+Service Pack      : 
+Build Number      : 
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 05/11/2020 10:09:36
+==================================================
+
+==================================================
+Product Name      : Microsoft Visual Studio Web Authoring Component
+Product ID        : 82503-694-0000007-62948
+Product Key       : GRXPP-JRYBX-7JWJB-M2H2C-G486T
+Installation Folder : 
+Service Pack      : 
+Build Number      : 
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 05/11/2020 10:09:36
+==================================================
+
+==================================================
+Product Name      : SQL Server
+Product ID        : MpcId-010-0008006-02709
+Product Key       : FH666-Y346V-7XFQ3-V69JM-RHW28
+Installation Folder : c:\Program Files\Microsoft SQL Server\110\Tools\
+Service Pack      : 
+Build Number      : 
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 05/11/2020 10:07:24
+==================================================
+
+==================================================
+Product Name      : Visual Studio (10.0)
+Product ID        : 
+Product Key       : H69QW-B2XQB-7FJ6H-G8C77-KX7CR
+Installation Folder : C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\
+Service Pack      : 
+Build Number      : 
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 05/11/2020 10:09:43
+==================================================
+
+==================================================
+Product Name      : Visual Studio (10.0)
+Product ID        : 
+Product Key       : H69QW-B2XQB-7FJ6H-G8C77-KX7CR
+Installation Folder : C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\
+Service Pack      : 
+Build Number      : 
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 05/11/2020 10:09:43
+==================================================
+
+==================================================
+Product Name      : Visual Studio (10.0)
+Product ID        : 
+Product Key       : H69QW-B2XQB-7FJ6H-G8C77-KX7CR
+Installation Folder : C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\
+Service Pack      : 
+Build Number      : 
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 05/11/2020 10:09:43
+==================================================
+
+==================================================
+Product Name      : Windows (BIOS OEM Key)
+Product ID        : 
+Product Key       : NBQ2C-G4YTB-8H8GH-2RFVV-FJRJY
+Installation Folder : 
+Service Pack      : 
+Build Number      : 
+Computer Name     : 
+Modified Time     : 
+==================================================
+
+==================================================
+Product Name      : Windows 10 Home Single Language
+Product ID        : 00342-41310-78423-AAOEM
+Product Key       : NBQ2C-G4YTB-8H8GH-2RFVV-FJRJY
+Installation Folder : C:\Windows
+Service Pack      : 
+Build Number      : 19043
+Computer Name     : DESKTOP-2E5092V
+Modified Time     : 27/06/2022 17:13:44
+==================================================
+
